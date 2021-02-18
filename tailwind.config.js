@@ -5,11 +5,13 @@ module.exports = {
     extend: {
       colors:{
         'purple-genie': '#8F7CED'
-      }
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+     
   },
   plugins: [],
+}
 }

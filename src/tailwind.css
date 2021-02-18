@@ -10,6 +10,9 @@ Document
 /**
 Use a better box model (opinionated).
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *,
 *::before,
@@ -53,7 +56,37 @@ body {
 /**
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
+@font-face {
+	font-family: 'proxima_nova_rgregular';
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_rgbold';
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'adelle_rgregular';
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot');
+	src: url('https://litmus.com/fonts/Emails/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.woff') format('woff'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.ttf') format('truetype'),
+		 url('https://litmus.com/fonts/Emails/adelle_reg-webfont.svg#adelle_rgregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 body {
   font-family:
 		system-ui,
@@ -62,9 +95,13 @@ body {
 		Roboto,
 		Helvetica,
 		Arial,
+    'proxima_nova_rgregular',
 		sans-serif,
 		'Apple Color Emoji',
 		'Segoe UI Emoji';
+}
+h1{
+  font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
 }
 .text_1 {
   animation: text1;
@@ -99,7 +136,7 @@ body {
   }
   
   60%, 90% {
-    width: 7.3em;
+    width: 7.4em;
   }
 }
 
@@ -108,7 +145,7 @@ body {
     width: 0;
   }
   10%, 40% {
-    width: 6.7em;
+    width: 6.9em;
   }
 }
 
