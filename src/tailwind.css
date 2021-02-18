@@ -38,6 +38,7 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 /*
@@ -116,7 +117,7 @@ h1{
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  animation-duration: 15s;
+  animation-duration: 10s;
   animation-timing-function: steps(25, end);
   animation-iteration-count: infinite;
 }
@@ -130,13 +131,14 @@ h1{
   animation-timing-function: steps(1, end);
 }
 
+
 @keyframes text2 {
   0%, 50%, 100% {
     width: 0;
   }
   
   60%, 90% {
-    width: 7.4em;
+    width: 3.3em;
   }
 }
 
@@ -145,7 +147,7 @@ h1{
     width: 0;
   }
   10%, 40% {
-    width: 6.9em;
+    width: 3em;
   }
 }
 
